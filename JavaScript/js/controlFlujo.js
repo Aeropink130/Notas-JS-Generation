@@ -87,13 +87,13 @@ if (condicion detonante){
 
 // let hora = 17; antes del prompt
 
-if (hora == 13) {
-    alert("vamos a descanso");
-} else if (hora == 14) {
-    alert("Vamos a comer");
-} else {
-    alert("Lo siento mi ciela, seguimos programando");
-}
+// if (hora == 13) {
+//     alert("vamos a descanso");
+// } else if (hora == 14) {
+//     alert("Vamos a comer");
+// } else {
+//     alert("Lo siento mi ciela, seguimos programando");
+// }
 
 /* 
 Switch (cambiar o intercambiar / según sea el caso)
@@ -123,8 +123,7 @@ switch (expresion){
 
 */
 
-// let op = parseInt(prompt("A que piso vas"));
-
+let op = parseInt(prompt("A que piso vas"));
 switch (op) {
     case 1:
         alert("Llegaste al piso 1");

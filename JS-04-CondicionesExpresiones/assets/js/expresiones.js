@@ -18,9 +18,30 @@ Operador
 
 Son operadores que nos permiten tomar valores numéricos como sus operandos y retornar un valor numéricoúnico, Corresponden a operaciones matemáticas.
 
+    suma(+)
+    resta(-)
+    multiplicacion(*)
+    division(/)
+    modulo(%)
+    exponenciacion(**)
+    increnmento (++)
+    decremento (--)
+
 */
 
-let suma = 5 + 3; //resultado 8
+//variables
+
+let numero1 = 10;
+let numero2 = 2;
+let numero3 = "5";
+
+
+
+let suma = numero1 + numero2; //resultado 12
+
+console.log("Suma de 10 + 2 ", suma)//1 forma de mostrar la suma
+console.log("Suma de 10 + 2 ", numero1 + numero2)//2 forma de mostrar la suma
+console.log("Suma de 10 + 2 ", 10 + 2)//3 forma de mostrar la suma
 
 let resta = 10 - 4; //resultado 6
 
@@ -48,4 +69,54 @@ function convertirAF(grados) {
     return resultado;
 }
 
-console.log(convertirAF(prompt("Grados celcius a convertir")) + " °F");
+// console.log(convertirAF(prompt("Grados celcius a convertir")) + " °F");
+
+let numerComparacion1 = 23;
+let numerComparacion2 = 13;
+let numerComparacion3 = 13;
+let numerComparacion4 = "13";
+
+// 13 == "13" //true
+// 13 === "13" //false
+
+
+if (edadFelipe >= 18) {
+    console.log("Puedes ir a la pachangona");
+} else {
+    console.log("Te quedas en casa");
+}
+
+
+/* Operadores lógicos
+
+nos devuelven un resultado a partir de que se cumpla o no una condicion, el resultado es booleano 
+
+    -And && sirve para determinar si dos expresiones son verdaderas. si ambas son verdaderas el resultado es verdadero, si una es falsa todo el resultado es falso.
+
+*/
+
+
+let tengounCrush = true;
+let miCrushMeQuiere = true;
+
+if (tengounCrush && miCrushMeQuiere) {
+    console.log("Estoy Jeliz");
+} else {
+    console.log("Haganse a un lado que me quiero automorir");
+}
+
+/* 
+
+    -OR || sirve para determinar si una de las 2 afirmaciones es verdadera, si al menos 1 es verdadero el resultado es verdadero
+
+*/
+
+if (hayChilaquilesVerdes || hayCarneEnSuJugo) {
+    console.log("Felipe desayuna chido");
+} else {
+    console.log("Felipe no desayuna chido");
+}
+
+if (edadFelipe >= 18 && saldoFelipe != 0) {
+
+}
