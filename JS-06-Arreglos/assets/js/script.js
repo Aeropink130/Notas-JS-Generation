@@ -148,7 +148,7 @@ let pacientesConsultorio = [
         nombre: "Jesus",
         edad: 51,
     }
-];
+]; //arreglo de objetos
 
 //funcion para agregar el texto "Necesita atencion especial" al array de cada paciente
 function agregarEstadoSalud(paciente) {
