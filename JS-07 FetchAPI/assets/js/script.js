@@ -194,3 +194,43 @@ console.log(pacienteStringifeado);
 let pacienteServidor = '{"nombre":"Felipe","edad":31,"estatus":"Registrado"}';
 let pacienteJSON = JSON.parse(pacienteServidor);
 console.log(pacienteJSON);
+
+
+
+//Método post para enviar un nuevo producto a nuesra BD de la FakeStoreAPI
+
+fetch('https://fakestoreapi.com/products', { //endpoint
+    method: "POST", //específicar el tipo de método
+    body: JSON.stringify(// instrucción para serializar el cuerpo de mi solicitud (para la interpretación del servidor)
+        {
+            title: 'Sopa Maruchan Pozole',
+            price: 15.5,
+            description: 'Una no tan deliciosa sopa maruchan de habanero',
+            image: 'https://pbs.twimg.com/media/C09hJZ5WEAA_bD2.jpg',
+            category: 'Sopas Instantaneas'
+        }
+    )
+})
+    .then(res => res.json())//metodo para la respuesta (saber que mi producto llegó con bien al servidor)
+    .then(json => console.log(json))//impresion en consola de la respuesta
+
+
+/* 
+
+fetch('https://fakestoreapi.com/products',{ //endpoint
+            method:"PUT", //especificar el tipo de metodo
+            body:JSON.stringify( //instruccion para serializar el cuerpo de mi solicitud (para la interpretacion del servidor)
+                {
+                    id: 1,
+                    title: inputTitulo.value,
+                    price: inputPrecio.value,
+                    description: inputDescripcion.value,
+                    image: inputImagen.value,
+                    category: inputCategoria.value
+                }
+            )
+        })
+            .then(res=>res.json()) //metodo para la respuesta (saber que mi producto llego con bien al servidor)
+            .then(json=>console.log(json))//impresion en consola para revisar la info
+
+*/
