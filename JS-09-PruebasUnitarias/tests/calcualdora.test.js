@@ -12,12 +12,12 @@ test('debe restar numero a - b', () => {
     expect(calculadora.resta(20, 10)).toBe(10);
 });
 
-test('debe restar numero a * b', () => {
+test('debe multiplicar numero a * b', () => {
     expect(calculadora.multiplicacion(3, 2)).toBe(6);
 });
 
-test('debe restar numero a - b', () => {
-    expect(calculadora.division(10, 2)).toBe(5);
+test('debe dividir numero a / b', () => {
+    expect(calculadora.division(15, 2)).toBe(7.5);
 });
 
 //prueba unitaria
